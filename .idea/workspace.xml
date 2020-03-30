@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0edc92f9-5b85-4476-a3b9-faa25def4075" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Sass File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Y4ktd0bYVq2LiRrDO0v9txmKEW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/category" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sanket\PycharmProjects\skillworm\category" />
+      <recent name="C:\Users\sanket\PycharmProjects\skillworm\homepage" />
+      <recent name="C:\Users\sanket\PycharmProjects\skillworm\userentry" />
+      <recent name="C:\Users\sanket\PycharmProjects\skillworm\homepage\migrations" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="skillworm" type="Python.DjangoServer" factoryName="Django server">
+      <module name="skillworm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0edc92f9-5b85-4476-a3b9-faa25def4075" name="Default Changelist" comment="" />
+      <created>1582209471601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582209471601</updated>
+      <workItem from="1582209477104" duration="23183000" />
+      <workItem from="1582299417335" duration="13845000" />
+      <workItem from="1582459483960" duration="9838000" />
+      <workItem from="1582515875113" duration="13449000" />
+      <workItem from="1582530465690" duration="217000" />
+      <workItem from="1582541217421" duration="22180000" />
+      <workItem from="1583682165571" duration="2257000" />
+      <workItem from="1583768975158" duration="646000" />
+      <workItem from="1583769641933" duration="1752000" />
+      <workItem from="1583779384539" duration="1622000" />
+      <workItem from="1583819634160" duration="10378000" />
+      <workItem from="1583869757817" duration="5991000" />
+      <workItem from="1583934509344" duration="5904000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1032" y="177" key="#Intentions" timestamp="1582417982438">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="177" key="#Intentions/0.0.1920.1040@0.0.1920.1040" timestamp="1582417982438" />
+    <state x="1003" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583869777370">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1003" y="99" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583869777370" />
+    <state x="1075" y="297" key="EditFileWatcherDialog" timestamp="1583936959564">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1075" y="297" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583936959564" />
+    <state x="1220" y="273" key="FileChooserDialogImpl" timestamp="1582297477357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="273" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1582297477357" />
+    <state x="782" y="434" key="Github.CreateGistDialog" timestamp="1582567402344">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="782" y="434" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582567402344" />
+    <state x="1135" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1583935918192">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1135" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583935918192" />
+  </component>
+</project>

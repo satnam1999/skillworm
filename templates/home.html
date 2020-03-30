@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %} 
+{% static 'images' as imagebase %}
+    <!-- Required meta tags -->
+      <link rel="stylesheet" href="{% static 'css/homesection.css' %}">
+      <link rel="stylesheet" href="{% static 'css/cardstyle.css' %}">
+      <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+    <!-- Bootstrap CSS -->
+{% endblock head %}
+
+{% block body %}
+      <!-- Image and text -->
+      <!-- NavBar and Page 1 -->
+      <!-- NavBar  -->
+          
+      <section class="manscroll">
+      <!-- alert for logout  -->
+          {% if alert == 1 %}
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Logout Successful!</strong> See You Later.
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          {% endif %}
+
+          <!-- slider  -->
+          <header>
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner" role="listbox">
+                      <!-- Slide One -->
+                      <div class="carousel-item active" class="d-flex justify-content-center" style="background-color: #FCFAFA">
+                          <img src="{% static 'images/logo.png' %}" >
+                          <div class="carousel-caption d-none d-md-block">
+                              <h3 class="display-4 slide_text"></h3>
+                              <p class="lead slide_text"></p>
+                          </div>
+                      </div>
+                      <!-- Slide Two -->
+                      <div class="carousel-item" class="d-flex justify-content-center" style="background-color: #FCFAFA">
+                          <img src="{% static 'images/logo_tag.png' %}" >
+                          <div class="carousel-caption d-none d-md-block" >
+                              <h3 class="display-4 slide_text" ></h3>
+                              <p class="lead slide_text"></p>
+                          </div>
+                      </div>
+                      <!-- Slide Three -->
+                      <div class="carousel-item " class="d-flex justify-content-center" style="background-color: #FCFAFA">
+                          <img src="{% static 'images/logo.png' %}" >
+                          <div class="carousel-caption d-none d-md-block">
+                              <h3 class="display-4 slide_text"></h3>
+                              <p class="lead slide_text"></p>
+                          </div>
+                      </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div>
+          </header>
+          <!-- Page Content 
+        <div class="wrapper">
+            <img class="h-5 d-inline-block" style="max-width: 100%;" src="https://i.ibb.co/9YNvVcN/photo-1522202176988-66273c2fd55f.jpg" class="img-fluid" alt="Responsive image" >
+            <div class="col-xs-8" id="search-wrapper" >
+                <form name="myform" method="GET" action="/search"> 
+
+                <input  class="form-control input-lg" type="text" name='search' placeholder="Search for skills..">
+            </form>
+            </div>
+          </div>
+        -->
+
+          <section class="py-5">
+              <div class="container">
+                  <h1 class="font-weight-light">Search</h1>
+                  <!--<p class="lead">The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from <a href="https://unsplash.com">Unsplash</a>!</p>-->
+                  <div class="container" align ="center">
+                    <form name="myform" method="GET" action="/search"> 
+                      <input class="form-control input-lg" name='search' type="text" placeholder="Try..">
+                      </form>
+                  </div>
+              </div>
+          </section>
+      </section>
+
+     
+      <section class="manscroll" >
+      <div style="height: 8vh" class="d-flex align-items-center">
+          <p>
+              You should try these Skills.
+          </p>
+      </div>
+      <div class="container">
+      <div class="row">
+          {% for s in skills %}
+              <div class="col-md-3">
+                  <article class="card card--{{ s.id }}">
+                  <style type="text/css">
+                              .card--{{ s.id }} .card__img,  .card--{{ s.id }} .card__img--hover{
+                                  background-image: url('{{ s.img.url }}');
+                              }
+                          </style>
+                      <div class="card__img">
+                      </div>
+                      <a href="/category/{{ s.skill_url }}" class="card_link">
+                          <div class="card__img--hover"></div>
+                      </a>
+                      <div class="card__info">
+                          <span class="card__category">{{s.category_name}}</span>
+                          <h3 class="card__title">{{s.skill_name}}</h3>
+                          <span class="card__by">Learn <a href="/category/{{ s.skill_url }}" class="card__author" title="author">Now</a></span>
+                      </div>
+                  </article>
+              </div>
+          {% endfor %}
+      </div>
+      </div>
+      </section>
+    
+ <!-- Cards Page 2 
+      <section class="manscroll" >
+        <div style="height: 8vh" class="d-flex align-items-center">
+            <p>
+                You should try these Skills.
+            </p>
+        </div>
+        
+        <section class="cards " style="width: 100rem;">
+            {% for s in skills %}
+         
+                    <article class="card card--{{ s.id }}">
+                    <style type="text/css">
+                                .card--{{ s.id }} .card__img,  .card--{{ s.id }} .card__img--hover{
+                                    background-image: url('{{ s.img.url }}');
+                                }
+                            </style>
+                        <div class="card__img">
+                        </div>
+                        <a href="#" class="card_link">
+                            <div class="card__img--hover"></div>
+                        </a>
+                        <div class="card__info">
+                            <span class="card__category">{{s.category_name}}</span>
+                            <h3 class="card__title">{{s.skill_name}}</h3>
+                            <span class="card__by">Learn <a href="#" class="card__author" title="author">Now</a></span>
+                        </div>
+                    </article>
+            {% endfor %}
+           
+        </section>
+        </section>
+
+
+
+    -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{% endblock body %}

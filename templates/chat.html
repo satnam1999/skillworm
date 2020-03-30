@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block head %}
+{% load static %} 
+{% static 'images' as imagebase %}
+    <!-- Required meta tags -->
+      <link rel="stylesheet" href="{% static 'css/homesection.css' %}">
+      <link rel="stylesheet" href="{% static 'css/cardstyle.css' %}">
+      <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+      
+    <!-- Bootstrap CSS -->
+    <script type="text/javascript" src="/static/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+{% endblock head %}
+{% block body %}
+<div id="app" class="container top-padding">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 col-sm-12">
+            <div class="card col-md-6" v-for="message in messages" v-bind:class="{ 'user-message': message.user,  'chat-message': message.chat_bot, 'offset-md-6': message.chat_bot}">
+                <div class="card-body">
+                    [[message.text]]
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="text-box" class="row top-padding">
+        <div class="col-md-8 offset-md-2 col-sm-12">
+            <textarea class="form-control" v-bind:placeholder="placeholder" v-model="input" v-bind:class="{ 'border-danger': send_blank}" v-on:change="check_content"></textarea>
+            <i class="fas fa-arrow-circle-right send-btn" v-on:click="add_message"></i>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/static/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+{% endblock body %}
